@@ -2,6 +2,7 @@
 
     // echo "good".'<br><br>';
     
+   
     require_once __DIR__.'/../vendor/autoload.php';
 
     use app\Router;
@@ -31,6 +32,7 @@
     // $router->post('/products/delete', [ProductController::class, 'delete']);
     // $router->post('/public/delete', [ProductController::class, 'delete']);
 
+    
     $router->get('/', [ProductController::class, 'index']);
     $router->get('/products', [ProductController::class, 'index']);
     $router->get('/products/index', [ProductController::class, 'index']);

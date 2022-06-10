@@ -5,6 +5,7 @@ use app\Database;
 use app\helpers\UtilHelper;
 use app\controllers\ProductController;
 
+
     class Product
     {
         public ?int $id = null;

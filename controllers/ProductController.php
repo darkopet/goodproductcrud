@@ -9,6 +9,7 @@
 
     class ProductController
     {
+        
         public function index(Router $router)
         {
             // echo "Index page".'<br>';
