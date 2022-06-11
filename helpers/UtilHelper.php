@@ -2,7 +2,6 @@
 
     namespace app\helpers;
 
-    
     class UtilHelper
     {
         public static function randomString($n) {
