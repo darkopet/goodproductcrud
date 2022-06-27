@@ -1,4 +1,4 @@
-<h1>Smartphones GOOD</h1>
+<h1>Smartphones Good CRUD</h1>
 
     <p>
         <a href="/products/create" class="btn btn-success">Create New Product</a>

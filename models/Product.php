@@ -1,6 +1,7 @@
 <?php
 
 namespace app\models;
+
 use app\Database;
 use app\helpers\UtilHelper;
 

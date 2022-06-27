@@ -6,7 +6,6 @@
       </div>
   <?php endif; ?>
 
-
   <form action="" method="post" enctype="multipart/form-data">
 
         <?php if ($product['image']): ?>

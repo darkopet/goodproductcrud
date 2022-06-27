@@ -41,26 +41,31 @@ class Router
         {
             $currentUrl = substr($currentUrl, 0, strpos($currentUrl, '?'));
         }
-        
+                var_dump($currentUrl);
+                echo "<br><br>";
         $method = $_SERVER['REQUEST_METHOD'];
-            // var_dump($method);
+                // var_dump($method);
         if($method === 'GET')
-        {   //var_dump($currentUrl);
+        {       
+                //var_dump($currentUrl);
             $fn = $this->getRoutes[$currentUrl] ?? null;
-            //var_dump($fn); 
+                //var_dump($fn); 
         }
         else 
         { $fn = $this->postRoutes[$currentUrl] ?? null; }
-            // echo "<br>";
-            // var_dump($fn);
-            // echo "<br>";
-            // $fn = $currentUrl;
+                // echo "<br>";
+                // var_dump($fn);
+                // echo "<br>";
+                // $fn = $currentUrl;
         if($fn) 
         {   
+                echo '<pre>';
+                var_dump($this);
+                echo "</pre>"; 
+                echo '<pre>';
+                var_dump($fn);
+                echo "</pre>"; 
             call_user_func($fn, $this);
-            // echo '<pre>';
-            // var_dump($fn);
-            // echo "</pre>"; 
         }
         else { echo "Page Not Found"; }
     }

@@ -1,4 +1,4 @@
-<!doctype html
+<!doctype html>
 <html lang="en">
 
   <head>
@@ -12,9 +12,9 @@
           integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
           crossorigin="anonymous" >
     <link rel="stylesheet" 
-          href="/app.css">
+          href="app.css">
 
-    <title>CRUD System - Smartphones</title>
+    <title>Smartphones Good CRUD</title>
   </head>
 
   <body>

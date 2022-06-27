@@ -11,7 +11,6 @@
         public function index(Router $router)
         {
             // echo "Index page".'<br>';
-            
             // echo '<pre>';
             // var_dump($products);
             // echo '</pre>';
