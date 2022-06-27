@@ -3,7 +3,6 @@
     namespace app\controllers;
     use app\models\Product;
     use app\Router;
-    use app\Database;
 
     /** Class CONTROLLER */
 
