@@ -3,7 +3,7 @@
         'name' => 'workstation/03_good',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'cb66b13fe6192a6c6d3b9c9bfa5effbaef8144ba',
+        'reference' => '11e664e17dffd284d018ac06c155e8c7275146f4',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'workstation/03_good' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'cb66b13fe6192a6c6d3b9c9bfa5effbaef8144ba',
+            'reference' => '11e664e17dffd284d018ac06c155e8c7275146f4',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
