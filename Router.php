@@ -29,7 +29,7 @@ class Router
 
     public function resolve()
     {
-        $currentUrl = $_SERVER['REQUEST_URI'] ?? '/';
+        $currentUrl = $_SERVER['PATH_INFO'] ?? '/';
        
             // var_dump($currentUrl);
             // echo "<br>";
@@ -71,8 +71,8 @@ class Router
 
                 echo "chckpnt8<br><br>";
 
-            // $that = $this;
-            // call_user_func($fn, $that);
+            $that = $this;
+            call_user_func($fn, $that);
 
             // $fn->{'index'}($this);
             // $this->{'index'}($fn);

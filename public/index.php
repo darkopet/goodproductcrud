@@ -32,10 +32,10 @@
     // $router->post('/products/delete', [ProductController::class, 'delete']);
     // $router->post('/public/delete', [ProductController::class, 'delete']);
  
-    // $router->get('/', [ProductController::class, 'index']);
+    $router->get('/', [ProductController::class, 'index']);
     $router->get('/public/', [ProductController::class, 'index']);
-    // $router->get('/products', [ProductController::class, 'index']);
-    // $router->get('/products/index', [ProductController::class, 'index']);
+    $router->get('/products', [ProductController::class, 'index']);
+    $router->get('/products/index', [ProductController::class, 'index']);
 
     echo "chckpnt4<br><br>";
 
