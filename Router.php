@@ -71,11 +71,19 @@ class Router
 
                 echo "chckpnt8<br><br>";
 
-            // call_user_func($fn, $this); // PROBLEM !!!
+            // $that = $this;
+            // call_user_func($fn, $that);
+
+            // $fn->{'index'}($this);
+            // $this->{'index'}($fn);
+            // $fn->{$index}($this);
+            // $this->{$index}($fn);
+
             // $fn($this);
             // $this($fn);
-            $fn->{$this}();
-            
+            // $fn->{$this}();
+            // call_user_func($this, $fn);
+
                 echo "chckpnt9<br><br>";
 
                 echo '<pre>';
