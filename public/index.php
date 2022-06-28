@@ -36,6 +36,6 @@
     // echo "chckpnt6<br><br>";
  
     $router->resolve(); 
-    // PROBLEM call_user_func !!!
+    // PROBLEM call_user_func !!! -> solution static functions in controller ???
 
     // echo "<br><br>chckpnt10<br><br>";

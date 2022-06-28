@@ -17,11 +17,9 @@
     <title>Smartphones Good CRUD</title>
   </head>
 
-  <body>
-
-        <?php echo $content; ?>
-
-  </body>
+      <body>
+            <?php echo $content; ?>
+      </body>
 
 </html>
 

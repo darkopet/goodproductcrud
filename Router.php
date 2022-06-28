@@ -43,6 +43,7 @@ class Router
         }
                 // var_dump($currentUrl);
                 // echo "<br><br>";
+
         $method = $_SERVER['REQUEST_METHOD'];
                 // var_dump($method);
 
@@ -63,6 +64,7 @@ class Router
                 // echo "</pre>"; 
 
                 // $fn = $currentUrl;
+                
         if($fn) 
         {   
                 // echo "chckpnt7<br><br>";

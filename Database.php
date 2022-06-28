@@ -26,7 +26,7 @@
                 $statement->bindValue(':title', "%$search%");
             } else {
                 # Query in the database in order to select products:
-                $statement = $this->pdo->prepare('SELECT * FROM products_good ORDER BY create_date DESC');
+                $statement = $this->pdo->prepare('SELECT * FROM products_good ORDER BY create_date ASC');
             }
 
             # Make the query 
