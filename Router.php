@@ -29,22 +29,23 @@ class Router
 
     public function resolve()
     {
-        $currentUrl = $_SERVER['PATH_INFO'] ?? '/';
-       
-            // var_dump($currentUrl);
-            // echo "<br>";
-            // echo'</pre>';
-            // var_dump($_SERVER);
-            // echo'<pre>';
+        $currentUrl = $_SERVER['REQUEST_URI'] ?? '/';
+                // var_dump($currentUrl);
+                // echo "<br>";
+
+                // echo'<pre>';
+                // var_dump($_SERVER);
+                // echo'</pre>';
        
         if(strpos($currentUrl, '?') !== false)
         {
             $currentUrl = substr($currentUrl, 0, strpos($currentUrl, '?'));
         }
-                var_dump($currentUrl);
-                echo "<br><br>";
+                // var_dump($currentUrl);
+                // echo "<br><br>";
         $method = $_SERVER['REQUEST_METHOD'];
                 // var_dump($method);
+
         if($method === 'GET')
         {       
                 //var_dump($currentUrl);
@@ -55,21 +56,26 @@ class Router
         { $fn = $this->postRoutes[$currentUrl] ?? null; }
                 // echo "<br>";
                 // var_dump($fn);
-                // echo "<br>";
+                // echo "<br><br>";
+
+                // echo '<pre>';
+                // var_dump($this);
+                // echo "</pre>"; 
+
                 // $fn = $currentUrl;
         if($fn) 
         {   
-                echo "chckpnt7<br><br>";
+                // echo "chckpnt7<br><br>";
 
-                echo '<pre>';
-                var_dump($this);
-                echo "</pre>"; 
+                // echo '<pre>';
+                // var_dump($this);
+                // echo "</pre>"; 
 
-                echo '<pre>';
-                var_dump($fn);
-                echo "</pre>"; 
+                // echo '<pre>';
+                // var_dump($fn);
+                // echo "</pre>"; 
 
-                echo "chckpnt8<br><br>";
+                // echo "chckpnt8<br><br>";
 
             $that = $this;
             call_user_func($fn, $that);
@@ -84,11 +90,11 @@ class Router
             // $fn->{$this}();
             // call_user_func($this, $fn);
 
-                echo "chckpnt9<br><br>";
+                // echo "chckpnt9<br><br>";
 
-                echo '<pre>';
-                var_dump($fn);
-                echo "</pre>"; 
+                // echo '<pre>';
+                // var_dump($fn);
+                // echo "</pre>"; 
         }
         else { echo "Page Not Found"; }
     }
@@ -107,9 +113,9 @@ class Router
         $content = ob_get_clean(); # Cleaning the local buffer, value of the view html file in the $content
         include_once __DIR__."/views/_layout.php";
 
-        // echo '<pre>';
-        // var_dump($_SERVER);
-        // echo '</pre>';
+                // echo '<pre>';
+                // var_dump($_SERVER);
+                // echo '</pre>';
         
     }
 }

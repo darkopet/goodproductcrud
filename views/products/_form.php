@@ -6,6 +6,8 @@
       </div>
   <?php endif; ?>
 
+  <link rel="stylesheet" href="../public/app.css">
+
   <form action="" method="post" enctype="multipart/form-data">
 
         <?php if ($product['image']): ?>

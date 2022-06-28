@@ -1,5 +1,4 @@
 <?php
-
     namespace app\controllers;
     use app\models\Product;
     use app\Router;
@@ -8,9 +7,9 @@
 
     class ProductController
     {
-        public function index(Router $router)
+        public static function index(Router $router)
         {
-            echo "Index page".'<br>';
+            // echo "Index page".'<br>';
             // echo '<pre>';
             // var_dump($products);
             // echo '</pre>';
@@ -25,7 +24,7 @@
             ]);
         }
 
-        public function create(Router $router)
+        public static function create(Router $router)
         {   
             $errors = [];
             $productData = [
@@ -61,7 +60,7 @@
             ]);
         }
 
-        public function update(Router $router)
+        public static function update(Router $router)
         {
             $id = $_GET['id'] ?? null;
             if(!$id){ header('Location: /products'); exit; }
@@ -94,7 +93,7 @@
             # echo "Update page".'<br>';
         }
 
-        public function delete(Router $router)
+        public static function delete(Router $router)
         {
             $id = $_POST['id'] ?? null;
             if(!$id) { header('Location: /products'); exit; }
